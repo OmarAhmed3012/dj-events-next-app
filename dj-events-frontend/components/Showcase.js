@@ -3,7 +3,7 @@ import styles from "@/styles/Showcase.module.css";
 export default function Showcase() {
   return (
     <div className={styles.showcase}>
-      <h1>Wellcome to the Party</h1>
+      <h1>Welcome to the Party</h1>
       <h2>Find the coolest DJ Events</h2>
     </div>
   );
