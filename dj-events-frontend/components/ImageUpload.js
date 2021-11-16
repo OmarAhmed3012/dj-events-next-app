@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { API_URL } from "../../config";
+import { API_URL } from "@/config/index.js";
 import styles from "@/styles/Form.module.css";
 
 export default function ImageUpload({ evtId, imageUploaded }) {

@@ -6,7 +6,7 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from "next/image";
-import { API_URL } from "./../../../../config/index";
+import { API_URL } from "@/config/index.js";
 import styles from "@/styles/Form.module.css";
 import moment from "moment";
 import Modal from "@/components/modal";

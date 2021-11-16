@@ -1,6 +1,6 @@
 import Layout from "@/components/layout";
 
-import { API_URL } from "./../../config/index.js";
+import { API_URL } from "@/config/index.js";
 import Eventitem from "@/components/EventItem";
 import Link from "next/link";
 export default function Home({ events }) {

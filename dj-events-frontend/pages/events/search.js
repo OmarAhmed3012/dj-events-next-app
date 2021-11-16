@@ -1,7 +1,7 @@
 import Layout from "@/components/layout";
 import { useRouter } from "next/router";
 import Eventitem from "@/components/EventItem";
-import { API_URL } from "./../../../config/index";
+import { API_URL } from "@/config/index.js";
 import qs from "qs";
 import Link from "next/link";
 

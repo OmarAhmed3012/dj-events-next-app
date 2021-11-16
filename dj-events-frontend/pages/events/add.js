@@ -4,7 +4,7 @@ import Layout from "@/components/layout";
 import { useState } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import { API_URL } from "./../../../config/index";
+import { API_URL } from "@/config/index.js";
 import styles from "@/styles/Form.module.css";
 
 export default function AddEventPage() {

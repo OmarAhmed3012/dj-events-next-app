@@ -1,7 +1,7 @@
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Layout from "@/components/layout";
-import { API_URL } from "./../../../config/index";
+import { API_URL } from "@/config/index.js";
 import styles from "@/styles/Event.module.css";
 import Link from "next/link";
 import Image from "next/image";

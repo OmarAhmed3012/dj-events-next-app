@@ -1,8 +1,8 @@
 import Layout from "@/components/layout";
 import Eventitem from "@/components/EventItem";
-import { API_URL } from "./../../../config/index";
+import { API_URL } from "@/config/index.js";
 import Pagination from "@/components/pagination";
-import { PER_PAGE } from "./../../../config/index";
+import { PER_PAGE } from "../../config/index";
 
 export default function EventsHome({ events, page, total }) {
   return (
