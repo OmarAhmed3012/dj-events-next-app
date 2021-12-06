@@ -3,7 +3,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useState, useEffect, useContext } from "react";
 import Link from "next/link";
-import Layout from "@/components/layout";
+import Layout from "@/components/Layout";
 import styles from "@/styles/AutForm.module.css";
 import AuthContext from "@/context/authContext";
 

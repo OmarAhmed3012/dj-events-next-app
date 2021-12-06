@@ -1,7 +1,7 @@
 import { ToastContainer, toast } from "react-toastify";
 import { FaImage } from "react-icons/fa";
 import "react-toastify/dist/ReactToastify.css";
-import Layout from "@/components/layout";
+import Layout from "@/components/Layout";
 import { useState } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";

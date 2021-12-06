@@ -1,4 +1,4 @@
-import Layout from "@/components/layout";
+import Layout from "@/components/Layout";
 import { useRouter } from "next/router";
 import Eventitem from "@/components/EventItem";
 import { API_URL } from "@/config/index.js";

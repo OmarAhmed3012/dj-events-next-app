@@ -1,6 +1,6 @@
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Layout from "@/components/layout";
+import Layout from "@/components/Layout";
 import EventMap from "@/components/EventMap";
 import { API_URL } from "@/config/index.js";
 import styles from "@/styles/Event.module.css";
@@ -41,7 +41,7 @@ export default function EventPage({ evt }) {
     </Layout>
   );
 }
-
+/*
 export async function getStaticPaths() {
   const res = await fetch(`${API_URL}/events`);
   const events = await res.json();
@@ -66,15 +66,15 @@ export async function getStaticProps({ params: { slug } }) {
     },
     revalidate: 1,
   };
+}*/
+
+export async function getServerSideProps({ query: { slug } }) {
+  const res = await fetch(`${API_URL}/events?slug=${slug}`);
+  const events = await res.json();
+
+  return {
+    props: {
+      evt: events[0],
+    },
+  };
 }
-
-// export async function getServerSideProps({ query: { slug } }) {
-//   const res = await fetch(`${API_URL}/api/events/${slug}`)
-//   const events = await res.json()
-
-//   return {
-//     props: {
-//       evt: events[0],
-//     },
-//   }
-// }
